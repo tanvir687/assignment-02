@@ -42,7 +42,7 @@ body {
   color: white;
 }
 .main-width {
-  max-width: 80%;
+  width: 80%;
   margin: 0 auto;
 }
 .display-flex {
@@ -74,7 +74,7 @@ header {
   border-radius: 40px;
   padding: 5px 20px 4px 5px;
 }
-.menu-bar-icon{
+.menu-bar-icon {
   display: none;
 }
 .banner {
@@ -88,27 +88,26 @@ header {
   background-color: #e6533c;
   padding: 15px 20px;
   border-radius: 40px;
- 
 }
 /* banner part styles */
-.banner-header{
+.banner-header {
   justify-content: space-between;
   align-items: center;
 }
-.banner-box{
+.banner-box {
   color: white;
   max-width: 465px;
   height: 380px;
 }
-.banner-heading{
+.banner-heading {
   font-size: 4.3rem;
   margin: 0px;
   line-height: 65px;
 }
-.shape-style{
+.shape-style {
   font-size: 6.5rem;
 }
-.banner-description{
+.banner-description {
   font-size: 0.89rem;
   line-height: 20px;
   letter-spacing: 0.5px;
@@ -116,15 +115,15 @@ header {
   opacity: 0.5;
   margin: 28px 0px;
 }
-.btn-primary{
+.btn-primary {
   color: white;
-  background-color: #E6533C;
+  background-color: #e6533c;
   padding: 16px 40px;
   border: none;
   border-radius: 38px;
   font-size: 1rem;
 }
-.btn-secondary{
+.btn-secondary {
   color: white;
   background: transparent;
   padding: 16px 40px;
@@ -133,10 +132,10 @@ header {
   font-size: 1rem;
   margin-left: 12px;
 }
-.banner-img-container{
+.banner-img-container {
   position: relative;
 }
-.first-cart-container{
+.first-cart-container {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
@@ -149,21 +148,21 @@ header {
   top: 110px;
   left: 210px;
 }
-.first-cart-title{
+.first-cart-title {
   font-size: 2.2rem;
   letter-spacing: 1px;
   margin: 10px 0px;
 }
-.first-cart-description{
+.first-cart-description {
   font-size: 0.73rem;
   letter-spacing: 1px;
   opacity: 0.65;
 }
-.circle-icon{
-  color: #E6533C;
+.circle-icon {
+  color: #e6533c;
   font-size: 40px;
 }
-.second-cart-container{
+.second-cart-container {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
@@ -179,32 +178,129 @@ header {
   right: 260px;
   bottom: 56px;
 }
-.second-cart-title{
+.second-cart-title {
   font-size: 1.35rem;
   letter-spacing: 1px;
   margin: 8px 0px;
 }
-.second-cart-description{
+.second-cart-description {
   font-size: 0.8rem;
   letter-spacing: 1px;
   opacity: 0.65;
-  margin: 0px ;
+  margin: 0px;
 }
 /* responsive with mobile device */
 @media screen and (max-width: 576px) {
-    .banner{
-      width: 100%;
-      margin: 0 auto;
-    }
-    .banner-container{
-      width: 352px;
-      margin: 0 auto;
-      justify-content: space-between;
-    }
-    .nav-item{
-      display: none;
-    }
-    .menu-bar-icon{
-      color: rgb(255, 255, 255);
-    }
+  header {
+    width: 100%;
+  }
+  .banner-header {
+    flex-direction: column;
+    margin: 0px;
+  }
+  .banner {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0px;
+  }
+  .banner-container {
+    justify-content: space-between;
+    margin: 45px 0px;
+    width: 45px;
+  }
+  .banner-box {
+    margin: 0px;
+    width: 90%;
+  }
+  .banner-heading {
+    font-size: 2.3rem;
+    width: 285px;
+    margin: 0px 0px;
+  }
+  .banner-description {
+    font-size: 0.89rem;
+    margin: 24px 0px;
+    width: 274px;
+  }
+  .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px auto;
+  }
+  .btn-primary,
+  .btn-secondary{
+    width: 100%;
+    padding: 16px 20px;
+  }
+  .nav-item {
+    display: none;
+  }
+  .menu-bar-icon {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+  }
+  .main-width{
+    width: 100%;
+  }
+  .banner-img-container img{
+    width: 100%;
+  }
+  .banner-img-container {
+    width: 80%;
+  }
+  .first-cart-container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 10px 15px;
+    height: 50px;
+    width: 100px;
+    line-height: 15px;
+    position: absolute;
+    top: 55px;
+    left: 190px;
+  }
+  .first-cart-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+  }
+  .first-cart-description {
+    font-size: 0.51rem;
+    letter-spacing: 1px;
+    opacity: 0.65;
+  }
+  .circle-icon {
+    color: #e6533c;
+    font-size: 30px;
+  }
+  .second-cart-container {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 12px 17px;
+    height: 48px;
+    width: 115px;
+    line-height: 15px;
+    align-items: center;
+    gap: 9px;
+    position: absolute;
+    top: 270px;
+    left: 0px;
+  }
+  .second-cart-title {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin: 8px 0px;
+  }
+  .second-cart-description {
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+    opacity: 0.65;
+    margin: 0px;
+  }
+
 }

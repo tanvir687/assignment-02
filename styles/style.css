@@ -48,6 +48,11 @@ body {
 .display-flex {
   display: flex;
 }
+.habits,
+.bmi {
+  background-color: black;
+  opacity: 0.9;
+}
 /* header part styles */
 /* nav part styles */
 header {
@@ -191,18 +196,14 @@ header {
   margin: 0px;
 }
 /* habits part styles */
-.habits{
-  background-color: black;
-  opacity: 0.9;
-}
-.habit-container{
+.habit-container {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   justify-items: center;
   text-align: center;
 }
-.habit-title{
+.habit-title {
   width: 420px;
   color: white;
   margin: 0px;
@@ -210,7 +211,7 @@ header {
   font-size: 2.67rem;
   text-align: center;
 }
-.habit-description{
+.habit-description {
   width: 565px;
   line-height: 20px;
   text-align: center;
@@ -220,7 +221,7 @@ header {
   margin: 14px 0px 54px 0px;
   line-height: 20px;
 }
-.habit-cart{
+.habit-cart {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 35px;
@@ -228,13 +229,13 @@ header {
   justify-content: center;
   padding-bottom: 100px;
 }
-.habit-cart-container{
+.habit-cart-container {
   width: 205px;
 }
-.habit-cart-image{
+.habit-cart-image {
   border-radius: 50%;
 }
-.habit-cart-title{
+.habit-cart-title {
   font-size: 1rem;
   color: white;
   margin-top: 30px;
@@ -242,7 +243,7 @@ header {
   line-height: 120%;
   text-align: center;
 }
-.habit-cart-description{
+.habit-cart-description {
   font-size: 0.7rem;
   color: white;
   opacity: 0.5;
@@ -251,34 +252,35 @@ header {
   text-align: center;
 }
 /* run part styles  */
-.run{
+.run {
   background-color: black;
   opacity: 0.9;
   padding-bottom: 60px;
+  margin: 0;
 }
-.run-text-container{
+.run-text-container {
   width: 380px;
   padding: 35px 54px;
 }
-.run-container{
+.run-container {
   justify-content: space-between;
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
 }
-.run-title{
-  font-size: 2.67rem;
+.run-title {
+  font-size: 2.66rem;
   line-height: 120%;
   margin: 0px;
   width: 355px;
 }
-.run-description{
+.run-description {
   font-size: 0.7rem;
   opacity: 0.5;
   line-height: 21px;
   margin: 14px 0px 30px 0px;
   width: 340px;
 }
-.run-container-btn{
+.run-container-btn {
   color: white;
   background-color: #e6533c;
   padding: 14px 65px;
@@ -286,7 +288,7 @@ header {
   border-radius: 38px;
   font-size: 1rem;
 }
-.run-img-container{
+.run-img-container {
   height: 275px;
   width: 320px;
   background: url("../images/run.png") no-repeat;
@@ -296,15 +298,37 @@ header {
   margin: 30px;
   border-radius: 18px;
 }
-
+/* bmi calculator section styles */
+.bmi-container {
+  background-color: black;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+}
+.bmi-text {
+  padding: 0px 0px 78px 0px;
+  width: 580px;
+}
+.bmi-tittle {
+  margin: 0px;
+  line-height: 120%;
+  font-size: 2.2rem;
+}
+.bmi-description {
+  margin: 0px;
+  line-height: 22px;
+  margin-top: 12px;
+  font-size: 0.8rem;
+  opacity: 0.4;
+}
 /* responsive with mobile device */
 @media screen and (max-width: 576px) {
   header,
-  section{
+  section {
     width: 100%;
   }
   body,
-  section{
+  section {
     scroll-behavior: none;
     scrollbar-width: none;
     scroll-margin: none;
@@ -346,7 +370,7 @@ header {
   }
   .btn-primary,
   .btn-secondary,
-  .run-container-btn{
+  .run-container-btn {
     width: 100%;
     padding: 16px 20px;
   }
@@ -357,10 +381,10 @@ header {
     color: rgb(255, 255, 255);
     font-size: 24px;
   }
-  .main-width{
+  .main-width {
     width: 100%;
   }
-  .banner-img-container img{
+  .banner-img-container img {
     width: 100%;
   }
   .banner-img-container {
@@ -421,92 +445,93 @@ header {
   }
   /* habits part responsive mobile device */
   .habits,
-  .habit-cart{
+  .habit-cart {
     display: flex;
     flex-direction: column;
   }
-  .habits{
+  .habits {
     align-items: center;
     margin: 0px;
     width: 100%;
   }
-  .habit-container{
+  .habit-container {
     width: 90%;
   }
-  .habit-title{
+  .habit-title {
     padding: 0px 0px 0px 0px;
     margin: 20px 0px;
     font-size: 2rem;
   }
-  .habit-cart-container{
+  .habit-cart-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .habit-description{
+  .habit-description {
     width: 275px;
   }
-  .habit-cart-description{
+  .habit-cart-description {
     font-size: 0.6rem;
     width: 80%;
     text-align: center;
   }
   /* run part responsive mobile device */
-  .run{
-  padding-bottom: 60px;
+  .run {
+    padding-bottom: 60px;
   }
-.run-container{
-  flex-direction: column;
-  justify-content: center;
-}
-.run-container{
-  width: 90%;
-}
-.run-text-container{
-  width: 84%;
-  padding: 30px;
-}
-.run-title{
-  font-size: 2.4rem;
-  line-height: 120%;
-  margin: 0px;
-  width: 100%;
-}
-.run-description{
-  font-size: 0.8rem;
-  opacity: 0.4;
-  line-height: 21px;
-  margin: 14px 0px 30px 0px;
-  width: 100%;
-}
-.run-container-btn{
-  color: white;
-  background-color: #e6533c;
-  padding: 16px ;
-  border: none;
-  border-radius: 38px;
-  font-size: 1rem;
-}
-.run-img-container{
-  height: 190px;
-  width: 100%;
-  background: url("../images/run.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 17px;
-  border-radius: 18px;
-}
-.run-image{
-  width: 90%;
-}
-.run-img-container{
-
-}
-
-
-
-
+  .run-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .run-container {
+    width: 90%;
+  }
+  .run-text-container {
+    width: 84%;
+    padding: 30px;
+  }
+  .run-title {
+    line-height: 120%;
+    margin: 0px;
+    width: 100%;
+  }
+  .run-description {
+    font-size: 0.8rem;
+    opacity: 0.4;
+    line-height: 21px;
+    margin: 14px 0px 30px 0px;
+    width: 100%;
+  }
+  .run-container-btn {
+    color: white;
+    background-color: #e6533c;
+    padding: 16px;
+    border: none;
+    border-radius: 38px;
+    font-size: 1rem;
+  }
+  .run-img-container {
+    height: 190px;
+    width: 100%;
+    background: url("../images/run.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 17px;
+    border-radius: 18px;
+  }
+  .run-image {
+    width: 90%;
+  }
+  /* bmi section styles  */
+  .bmi-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .bmi-text {
+    width: 90%;
+  }
 }

@@ -254,19 +254,16 @@ header {
 .run{
   background-color: black;
   opacity: 0.9;
+  padding-bottom: 60px;
 }
-
-
 .run-text-container{
   width: 380px;
+  padding: 35px 54px;
 }
 .run-container{
   justify-content: space-between;
   border-radius: 18px;
   background-color: rgb(34, 34, 34);
-}
-.run-text-container{
-  padding: 35px 54px;
 }
 .run-title{
   font-size: 2.67rem;
@@ -284,7 +281,7 @@ header {
 .run-container-btn{
   color: white;
   background-color: #e6533c;
-  padding: 16px 65px;
+  padding: 14px 65px;
   border: none;
   border-radius: 38px;
   font-size: 1rem;
@@ -300,23 +297,17 @@ header {
   border-radius: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive with mobile device */
 @media screen and (max-width: 576px) {
   header,
   section{
     width: 100%;
+  }
+  body,
+  section{
+    scroll-behavior: none;
+    scrollbar-width: none;
+    scroll-margin: none;
   }
   /* nav and banner part responsive mobile device */
   .banner-header {
@@ -463,6 +454,59 @@ header {
     text-align: center;
   }
   /* run part responsive mobile device */
+  .run{
+  padding-bottom: 60px;
+  }
+.run-container{
+  flex-direction: column;
+  justify-content: center;
+}
+.run-container{
+  width: 90%;
+}
+.run-text-container{
+  width: 84%;
+  padding: 30px;
+}
+.run-title{
+  font-size: 2.4rem;
+  line-height: 120%;
+  margin: 0px;
+  width: 100%;
+}
+.run-description{
+  font-size: 0.8rem;
+  opacity: 0.4;
+  line-height: 21px;
+  margin: 14px 0px 30px 0px;
+  width: 100%;
+}
+.run-container-btn{
+  color: white;
+  background-color: #e6533c;
+  padding: 16px ;
+  border: none;
+  border-radius: 38px;
+  font-size: 1rem;
+}
+.run-img-container{
+  height: 190px;
+  width: 100%;
+  background: url("../images/run.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 17px;
+  border-radius: 18px;
+}
+.run-image{
+  width: 90%;
+}
+.run-img-container{
+
+}
+
+
 
 
 }

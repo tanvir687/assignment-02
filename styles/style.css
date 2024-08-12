@@ -457,6 +457,7 @@ option {
   margin: 0 auto;
   padding-left: 20px;
   padding-bottom: 20px;
+  grid-auto-flow: dense;
 }
 .our-feature-gelary-container{
   padding-top: 20px;
@@ -743,4 +744,60 @@ option {
   .bmi-calculate-unit input {
     width: 80%;
   }
+  /* our feature section styles */
+  .gelary{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .our-feature-container{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .our-feature-text{
+    width: 90%;
+    margin: 0 auto;
+  }
+  .feature-title,
+  .feature-description{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .feature-title{
+    margin: 0px;
+    font-size: 1.7rem;
+    text-align: center;
+    justify-items: center;
+    line-height: 120%;
+    padding: 50px 0px 0px 0px;
+  }
+  .feature-description{
+    font-size: 0.8rem;
+    opacity: 0.4;
+    margin: 0px;
+    padding: 15px 0px 50px 0px;
+    text-align: center;
+    line-height: 20px;
+    width: 275px;
+  }
+.our-feature-gelary{
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0px;
+  margin: 0px 10px;
+  width: 90%;
+  height: 100%;
+}
+.display-none{
+  display: none;
+}
+#trainer2{
+  grid-column: -1;
+  order: 1;
+}
+
+
+
+
+
 }

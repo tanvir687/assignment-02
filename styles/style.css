@@ -444,22 +444,45 @@ option {
   width: 560px;
   line-height: 20px;
 }
-.our-feature-gelary-container img{
-  height: 240px;
-  width: 290px;
+.gelary{
+  padding-bottom: 78px;
 }
-.our-feature-gelary {
+.our-feature-gelary{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: white;
+  gap: 0px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  width: 100%;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 .our-feature-gelary-container{
-  padding: 20px 20px;
-  margin: 0 auto;
+  padding-top: 20px;
+  margin-right: 20px;
 }
-
-
+.our-feature-gelary-container img{
+  height: 260px;
+  width: 100%;
+  border-radius: 18px;
+}
+.gelary-image-heading{
+  margin: 0px;
+  position: relative;
+  top: -38px;
+  left: 22px;
+  font-size: 1.1rem;
+  font-weight: 120%;
+}
+.gelary-image-title{
+  margin: 0px;
+  position: relative;
+  top: -20px;
+  left: 22px;
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
 
 
 

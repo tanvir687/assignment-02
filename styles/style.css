@@ -31,6 +31,11 @@ body {
   font-weight: 600;
   color: white;
 }
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+}
 .inter-regular {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -537,7 +542,79 @@ option {
   opacity: 0.6;
   margin-bottom: 20px;
 }
-
+/* footer part styles  */
+.footer{
+  background-color: rgb(34, 34, 34);
+  padding: 0;
+  margin: 0;
+}
+.footer-logo{
+  margin: 0px;
+  padding: 50px 0px 0px 0px;
+  font-size: 3.8rem;
+  line-height: 120%;
+}
+.footer-description{
+  font-size: 0.7rem;
+  opacity: 0.4;
+  margin: 20px 0px 60px 0px;
+  line-height: 20px;
+  width: 65%;
+}.footer-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-secondary-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-about-heading,
+.footer-service-heading{
+  margin: 10px 0px;
+  font-size: 1.4rem;
+  padding: 50px 0px 10px 0px;
+  width: 100%;
+  line-height: 120%;
+}
+.footer-about-container ul,
+.footer-service-container ul{
+  list-style: none;
+}
+.footer-about-container ul a,
+.footer-service-container ul a{
+  text-decoration: none;
+  font-size: 1rem;
+  opacity: 0.4;
+  line-height: 30px;
+}
+.service-list li{
+  width: 120%;
+}
+.secondary-service{
+  display: flex;
+  flex-direction: column;
+}
+.footer-service-container,
+.footer-about-container{
+  width: 50%;
+}
+.service-list{
+  padding: 0px;
+}
+.horizontal-line{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 80%;
+}
+.footer-copy{
+  margin: 0px;
+  font-size: 1.1rem;
+  line-height: 20px;
+  opacity: 0.4;
+  padding: 32px 0px;
+  text-align: center;
+}
 
 
 
@@ -879,11 +956,8 @@ option {
   height: 150px;
 }
 .btn-contact{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0px;
+  width: 200px;
 }
-
+/* footer part styles  */
 
 }

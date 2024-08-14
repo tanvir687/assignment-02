@@ -5,7 +5,6 @@ body {
   padding: 0;
   line-height: 0;
 }
-
 /* sheared styles  */
 /* Miama font  */
 .miama-regular {
@@ -673,7 +672,8 @@ textarea {
   .nav-item {
     display: none;
   }
-  .menu-bar-icon {
+  .menu-bar-icon{
+    display: contents;
     color: rgb(255, 255, 255);
     font-size: 24px;
   }
@@ -989,3 +989,4 @@ textarea {
     width: 100%;
   }
 }
+
